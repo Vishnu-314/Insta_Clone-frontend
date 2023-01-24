@@ -4,7 +4,7 @@ export const ShowPosts = () => {
     const [serverResponse, setServerResponse] = useState(null);
 
     const fetchAllPosts = async () => {
-        const resp = await fetch('http://localhost:8080/all')
+        const resp = await fetch('https://insta-clone-vish-ktzg.onrender.com/all')
         setServerResponse(await resp.json())
     }
 
@@ -42,7 +42,7 @@ export const ShowPosts = () => {
                             <h3 className="card-title">{post.username}</h3>
                             <h5>{post.address}</h5>
                             </div> */}
-                            <img className="img-fluid" height={200} style={{ border: '2px solid red' }} src={`http://localhost:8080/images/${post.image_file}`} alt=" " key={index} />
+                            <img className="img-fluid" height={200} style={{ border: '2px solid red' }} src={`https://insta-clone-vish-ktzg.onrender.com/images/${post.image_file}`} alt=" " key={index} />
 
 
                             <nav className="navbar navbar-expand-lg bg-body-tertiary">

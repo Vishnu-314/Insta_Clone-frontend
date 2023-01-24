@@ -18,7 +18,7 @@ export const AddNewPost = () => {
         formData.append("image_file", imageFile)
         formData.append("description", description)
 
-        fetch("http://localhost:8080/api", {
+        fetch("https://insta-clone-vish-ktzg.onrender.com/api", {
             method: 'POST',
             body: formData
         })
