@@ -3,17 +3,8 @@ import { AddNewPost } from "./AddNewPost"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { ShowPosts } from "./ShowPosts";
 import Navbar from "./Navbar";
-import { Link } from 'react-router-dom'
+import Homepage from "./Homepage";
 
-const Homepage=()=>{
-  return(
-    <div>
-      <button type="button" class="btn btn-warning"><Link to="post">"Click for New Post"</Link></button>
-      <button type="button" class="btn btn-warning"><Link to="view">"Click to See All The Posts"</Link></button>
-      
-    </div>
-  )
-}
 
 export const App = () => {
   return (

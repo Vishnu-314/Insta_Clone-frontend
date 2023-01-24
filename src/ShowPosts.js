@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react"
+// import { useLocation } from "react-router-dom";
 
 export const ShowPosts = () => {
+
+    
+
     const [serverResponse, setServerResponse] = useState(null);
 
+   
     const fetchAllPosts = async () => {
         const resp = await fetch('https://insta-clone-vish-ktzg.onrender.com/all')
         setServerResponse(await resp.json())
